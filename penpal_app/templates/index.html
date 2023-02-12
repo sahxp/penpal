@@ -1,3 +1,4 @@
+{% block operation %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -6,9 +7,9 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="img/logo.png">
-  <title>Vogel - Social Network & Community HTML Template</title>
-  <meta name="description" content="Vogel - Social Network & Community HTML Template" />
+  <link rel="icon" type="image/png" href="/static/img/penpal-logo.png">
+  <title>PENPAL</title>
+  <meta name="description" content="Penpal - Social Network & Community HTML Template" />
   <meta name="keywords"
     content="bootstrap5, e-learning, forum, games, online course, Social Community, social events, social feed, social media, social media template, social network html, social sharing, twitter" />
 
@@ -23,8 +24,8 @@
 
 <body class="bg-light">
   <div class="web-none d-flex align-items-center px-3 pt-3">
-    <a href="index.html" class="text-decoration-none">
-      <img src="img/logo.png" class="img-fluid logo-mobile" alt="brand-logo">
+    <a href="" class="text-decoration-none">
+      <img src="/static/img/penpal-logo.png" class="img-fluid logo-mobile" alt="brand-logo">
     </a>
     <button class="ms-auto btn btn-primary ln-0" type="button" data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -35,7 +36,7 @@
     <div class="container">
       <div class="row position-relative">
 
-        <main class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
+        <main class="homepage col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
           <div class="main-content">
             <ul
               class="top-osahan-nav-tab nav nav-pills justify-content-center nav-justified mb-4 shadow-sm rounded-4 overflow-hidden bg-white sticky-sidebar2"
@@ -53,7 +54,7 @@
               <li class="nav-item" role="presentation">
                 <button class="p-3 nav-link text-muted" id="pills-trending-tab" data-bs-toggle="pill"
                   data-bs-target="#pills-trending" type="button" role="tab" aria-controls="pills-trending"
-                  aria-selected="false">Trending</button>
+                  aria-selected="false">Chat</button>
               </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -273,7 +274,7 @@
                                           class="material-icons md-13 me-1">delete</span>Delete</a></li>
                                     <li><a class="dropdown-item text-muted" href="#"><span
                                           class="material-icons md-13 me-1 ltsp-n5">arrow_back_ios
-                                          arrow_forward_ios</span>Embed Vogel</a></li>
+                                          arrow_forward_ios</span>Embed Penpal</a></li>
                                     <li><a class="dropdown-item text-muted d-flex align-items-center" href="#"><span
                                           class="material-icons md-13 me-1">share</span>Share via another apps</a></li>
                                   </ul>
@@ -281,16 +282,16 @@
                               </div>
                             </div>
                             <div class="my-2">
-                              <p class="mb-3 text-primary">Welcome to the Vogel family 🙂</p>
+                              <p class="mb-3 text-primary">Welcome to the Penpal family 🙂</p>
                               <ul class="list-unstyled mb-3">
                                 <li>1. Follow people you like by clicking on the ’+ Follow’ button to see their posts in
                                   your feed.</li>
                                 <li>2. Share your thoughts with others and gain a following.</li>
                               </ul>
-                              <p class="text-dark">Happy Vogel to you!</p>
+                              <p class="text-dark">Happy Penpal to you!</p>
                               <a href="#" class="text-decoration-none" data-bs-toggle="modal"
                                 data-bs-target="#commentModal">
-                                <img src="img/post1.png" class="img-fluid rounded mb-3" alt="post-img">
+                                <img src="/static/img/pegion.png" class="img-fluid rounded mb-3" alt="post-img">
                               </a>
                               <div class="d-flex align-items-center justify-content-between mb-2">
                                 <div>
@@ -426,7 +427,7 @@
                                           class="material-icons md-13 me-1">delete</span>Delete</a></li>
                                     <li><a class="dropdown-item text-muted" href="#"><span
                                           class="material-icons md-13 me-1 ltsp-n5">arrow_back_ios
-                                          arrow_forward_ios</span>Embed Vogel</a></li>
+                                          arrow_forward_ios</span>Embed Penpal</a></li>
                                     <li><a class="dropdown-item text-muted d-flex align-items-center" href="#"><span
                                           class="material-icons md-13 me-1">share</span>Share via another apps</a></li>
                                   </ul>
@@ -803,7 +804,7 @@
                                         class="material-icons md-13 me-1">delete</span>Delete</a></li>
                                   <li><a class="dropdown-item text-muted" href="#"><span
                                         class="material-icons md-13 me-1 ltsp-n5">arrow_back_ios
-                                        arrow_forward_ios</span>Embed Vogel</a></li>
+                                        arrow_forward_ios</span>Embed Penpal</a></li>
                                   <li><a class="dropdown-item text-muted d-flex align-items-center" href="#"><span
                                         class="material-icons md-13 me-1">share</span>Share via another apps</a></li>
                                 </ul>
@@ -818,10 +819,10 @@
                               velit mentitum vis ne.
                               🙂
                             </p>
-                            <p class="text-dark">Happy Vogel to you!</p>
+                            <p class="text-dark">Happy Penpal to you!</p>
                             <a href="#" class="text-decoration-none" data-bs-toggle="modal"
                               data-bs-target="#commentModal">
-                              <img src="img/post1.png" class="img-fluid rounded mb-3" alt="post-img">
+                              <img src="/static/img/pegion.png" class="img-fluid rounded mb-3" alt="post-img">
                             </a>
                             <div class="d-flex align-items-center justify-content-between mb-2">
                               <div>
@@ -955,7 +956,7 @@
                                         class="material-icons md-13 me-1">delete</span>Delete</a></li>
                                   <li><a class="dropdown-item text-muted" href="#"><span
                                         class="material-icons md-13 me-1 ltsp-n5">arrow_back_ios
-                                        arrow_forward_ios</span>Embed Vogel</a></li>
+                                        arrow_forward_ios</span>Embed Penpal</a></li>
                                   <li><a class="dropdown-item text-muted d-flex align-items-center" href="#"><span
                                         class="material-icons md-13 me-1">share</span>Share via another apps</a></li>
                                 </ul>
@@ -1091,13 +1092,13 @@
           <div class="p-2 bg-light offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
             <div class="sidebar-nav mb-3">
               <div class="pb-4">
-                <a href="index.html" class="text-decoration-none">
-                  <img src="img/logo.png" class="img-fluid logo" alt="brand-logo">
+                <a href="" class="text-decoration-none">
+                  <img src="/static/img/penpal-logo.png" class="img-fluid logo" alt="brand-logo">
                 </a>
               </div>
               <ul class="navbar-nav justify-content-end flex-grow-1">
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link active"><span class="material-icons me-3">house</span>
+                  <a href="" class="nav-link active"><span class="material-icons me-3">house</span>
                     <span>Feed</span></a>
                 </li>
                 <li class="nav-item">
@@ -1105,7 +1106,7 @@
                     <span>Profile</span></a>
                 </li>
                 <li class="nav-item">
-                  <a href="explore.html" class="nav-link"><span class="material-icons me-3">explore</span>
+                  <a href="/explore" class="nav-link"><span class="material-icons me-3">explore</span>
                     <span>Explore</span></a>
                 </li>
                 <li class="nav-item">
@@ -1113,7 +1114,7 @@
                       class="material-icons me-3">translate</span> <span>Language</span></a>
                 </li>
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link"><span class="material-icons me-3">logout</span>
+                  <a href="" class="nav-link"><span class="material-icons me-3">logout</span>
                     <span>Logout</span></a>
                 </li>
                 <li class="nav-item dropdown">
@@ -1122,14 +1123,14 @@
                     <span class="material-icons me-3">web</span> Pages
                   </a>
                   <ul class="dropdown-menu px-2 py-1 mb-2" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="contact.html">Contact</a></li>
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="faq.html">FAQ</a></li>
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="404.html">404 Error</a></li>
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="edit-profile.html">Edit Profile</a></li>
+                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/contact">Contact</a></li>
+                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/faq">FAQ</a></li>
+                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/notfound">404 Error</a></li>
+                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/editprofile">Edit Profile</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="tags.html" class="nav-link"><span class="material-icons me-3">local_fire_department</span>
+                  <a href="/tags" class="nav-link"><span class="material-icons me-3">local_fire_department</span>
                     <span>Trending</span></a>
                 </li>
               </ul>
@@ -1141,13 +1142,13 @@
           <div class="ps-0 m-none fix-sidebar">
             <div class="sidebar-nav mb-3">
               <div class="pb-4 mb-4">
-                <a href="index.html" class="text-decoration-none">
-                  <img src="img/logo.png" class="img-fluid logo" alt="brand-logo">
+                <a href="" class="text-decoration-none">
+                  <img src="/static/img/penpal-logo.png" class="img-fluid logo" alt="brand-logo">
                 </a>
               </div>
               <ul class="navbar-nav justify-content-end flex-grow-1">
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link active"><span class="material-icons me-3">house</span>
+                  <a href="" class="nav-link active"><span class="material-icons me-3">house</span>
                     <span>Feed</span></a>
                 </li>
                 <li class="nav-item">
@@ -1155,7 +1156,7 @@
                     <span>Profile</span></a>
                 </li>
                 <li class="nav-item">
-                  <a href="explore.html" class="nav-link"><span class="material-icons me-3">explore</span>
+                  <a href="/explore" class="nav-link"><span class="material-icons me-3">explore</span>
                     <span>Explore</span></a>
                 </li>
                 <li class="nav-item">
@@ -1163,7 +1164,7 @@
                       class="material-icons me-3">translate</span> <span>Language</span></a>
                 </li>
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link"><span class="material-icons me-3">logout</span>
+                  <a href="" class="nav-link"><span class="material-icons me-3">logout</span>
                     <span>Logout</span></a>
                 </li>
                 <li class="nav-item dropdown">
@@ -1172,14 +1173,14 @@
                     <span class="material-icons me-3">web</span> Pages
                   </a>
                   <ul class="dropdown-menu px-2 py-1 mb-2" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="contact.html">Contact</a></li>
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="faq.html">FAQ</a></li>
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="404.html">404 Error</a></li>
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="edit-profile.html">Edit Profile</a></li>
+                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/contact">Contact</a></li>
+                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/faq">FAQ</a></li>
+                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/notfound">404 Error</a></li>
+                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/editprofile">Edit Profile</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="tags.html" class="nav-link"><span class="material-icons me-3">local_fire_department</span>
+                  <a href="/tags" class="nav-link"><span class="material-icons me-3">local_fire_department</span>
                     <span>Trending</span></a>
                 </li>
               </ul>
@@ -1195,12 +1196,12 @@
               <div class="sticky-sidebar2 mb-3">
                 <div class="input-group mb-4 shadow-sm rounded-4 overflow-hidden py-2 bg-white">
                   <span class="input-group-text material-icons border-0 bg-white text-primary">search</span>
-                  <input type="text" class="form-control border-0 fw-light ps-1" placeholder="Search Vogel">
+                  <input type="text" class="form-control border-0 fw-light ps-1" placeholder="Search Penpal">
                 </div>
                 <div class="bg-white rounded-4 overflow-hidden shadow-sm mb-4">
                   <h6 class="fw-bold text-body p-3 mb-0 border-bottom">What's happening</h6>
 
-                  <a href="tags.html"
+                  <a href="/tags"
                     class="p-3 border-bottom d-flex align-items-center text-dark text-decoration-none">
                     <div>
                       <div class="text-muted fw-light d-flex align-items-center">
@@ -1213,7 +1214,7 @@
                     <img src="img/rmate4.jpg" class="img-fluid rounded-4 ms-auto" alt="profile-img">
                   </a>
 
-                  <a href="tags.html"
+                  <a href="/tags"
                     class="p-3 border-bottom d-flex align-items-center text-dark text-decoration-none">
                     <div>
                       <div class="text-muted fw-light d-flex align-items-center">
@@ -1272,7 +1273,7 @@
                     </div>
                   </div>
 
-                  <a href="tags.html"
+                  <a href="/tags"
                     class="p-3 border-bottom d-flex align-items-center text-dark text-decoration-none">
                     <div>
                       <div class="text-muted fw-light d-flex align-items-center">
@@ -1284,7 +1285,7 @@
                     <img src="img/trend1.jpg" class="img-fluid rounded-4 ms-auto" alt="trending-img">
                   </a>
 
-                  <a href="explore.html" class="text-decoration-none">
+                  <a href="/explore" class="text-decoration-none">
                     <div class="p-3">Show More</div>
                   </a>
                 </div>
@@ -1856,5 +1857,5 @@
   <script src="{%  static  '/js/vendor/slick.min.js'  %}" defer></script>
 
 </body>
-
 </html>
+{% endblock %}
