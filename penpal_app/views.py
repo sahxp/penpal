@@ -5,3 +5,24 @@ from datetime import datetime
 
 def index(request):
     return render(request,'index.html')
+
+def notfound(request):
+    return render(request,'404.html')
+
+def editprofile(request):
+    return render(request,'edit-profile.html')
+
+def explore(request):
+    return render(request,'explore.html')
+
+def faq(request):
+    return render(request,'faq.html')
+
+def profile(request):
+    return render(request,'profile.html')
+
+def tags(request):
+    return render(request,'tags.html')
+
+def contact(request):
+    return render(request,'contact.html')
