@@ -3182,7 +3182,8 @@ fieldset:disabled .btn {
 .btn-primary {
   color: #fff;
   background-color: #0e6dfd;
-  border-color: #0e6dfd
+  border-color: #0e6dfd;
+  border-radius: 5px;
 }
 
 .btn-primary:hover {
@@ -3196,7 +3197,7 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #0b5ed7;
   border-color: #0a58ca;
-  box-shadow: 0 0 0 .25rem rgba(49, 132, 253, .5)
+  box-shadow: 0 0 0 .25rem rgba(49, 132, 253, .5);
 }
 
 .btn-check:active+.btn-primary,
