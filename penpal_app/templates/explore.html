@@ -33,113 +33,63 @@
 <div class="main-content">
 <div class="d-flex align-items-center mb-3">
 <a href="" class="material-icons text-dark text-decoration-none m-none me-3">arrow_back</a>
-<p class="ms-2 mb-0 fw-bold text-body fs-6">Explore</p>
+<p class="ms-2 mb-0 fw-bold text-body fs-6">Radar Chart</p>
 </div>
 <div class="bg-white rounded-4 overflow-hidden shadow-sm mb-4 mb-lg-0">
 
-<a href="/tags" class="p-3 border-bottom d-flex align-items-center text-dark text-decoration-none">
-<div>
-<div class="text-muted fw-light d-flex align-items-center">
-<small>Celebrity</small><span class="mx-1 material-icons md-3">circle</span><small>Live</small>
-</div>
-<p class="fw-bold mb-0 pe-3">Happy birthday, Osahan 🎂</p>
-<small class="text-muted">Trending with</small><br />
-<span class="text-primary">#HappyBirthdayJohnSmith</span>
-</div>
-<img src="../static/img/rmate4.jpg" class="img-fluid rounded-4 ms-auto" alt="profle-img">
-</a>
+  <div class="p-3 border-bottom d-flex align-items-center text-dark text-decoration-none">
+    <canvas id="myChart"></canvas>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <script>
+    const ctx = document.getElementById('myChart');
+    const data = {
+  labels: [
+    'Eating',
+    'Drinking',
+    'Sleeping',
+    'Designing',
+    'Coding',
+    'Cycling',
+    'Running'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [65, 59, 90, 81, 56, 55, 40],
+    fill: true,
+    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+    borderColor: 'rgb(255, 99, 132)',
+    pointBackgroundColor: 'rgb(255, 99, 132)',
+    pointBorderColor: '#fff',
+    pointHoverBackgroundColor: '#fff',
+    pointHoverBorderColor: 'rgb(255, 99, 132)'
+  }, {
+    label: 'My Second Dataset',
+    data: [28, 48, 40, 19, 96, 27, 100],
+    fill: true,
+    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+    borderColor: 'rgb(54, 162, 235)',
+    pointBackgroundColor: 'rgb(54, 162, 235)',
+    pointBorderColor: '#fff',
+    pointHoverBackgroundColor: '#fff',
+    pointHoverBorderColor: 'rgb(54, 162, 235)'
+  }]
+};
+    new Chart(ctx, {
+  type: 'radar',
+  data: data,
+  options: {
+    elements: {
+      line: {
+        borderWidth: 3
+      }
+    }
+  },
+});
+  </script>
 
-<a href="/tags" class="p-3 border-bottom d-flex align-items-center text-dark text-decoration-none">
-<div>
-<div class="text-muted fw-light d-flex align-items-center">
-</div>
-<p class="fw-bold mb-0 pe-3">#SelectricsM12</p>
-<small class="text-muted">Buy now with exclusive offers</small><br />
-<small class="text-muted d-flex align-items-center"><span class="material-icons me-1 small">open_in_new</span>Promoted by Selectrics World</small>
- </div>
-</a>
-
-<div class="p-3 border-bottom d-flex">
-<div>
-<div class="text-muted fw-light d-flex align-items-center">
-<small>Trending in India</small>
-</div>
-<p class="fw-bold mb-0 pe-3 text-dark">#ME11Lite</p>
-<small class="text-muted">Discere constituto vituperatoribus ad vis, in pri atqui animal assueverit</small><br />
-<small class="text-muted">52.8k Tweets</small>
-</div>
-<div class="dropdown ms-auto">
-<a href="#" class="text-muted text-decoration-none material-icons ms-2 md-20 rounded-circle bg-light p-1" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">more_vert</a>
-<ul class="dropdown-menu fs-13 dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
-<li><a class="dropdown-item text-muted" href="#"><span class="material-icons md-13 me-1">sentiment_very_dissatisfied</span>Not interested in this</a></li>
-<li><a class="dropdown-item text-muted" href="#"><span class="material-icons md-13 me-1">sentiment_very_dissatisfied</span>This trend is harmful or spammy</a></li>
-</ul>
-</div>
-</div>
-
-<a href="/tags" class="p-3 border-bottom d-flex align-items-center text-dark text-decoration-none">
-<div>
-<div class="text-muted fw-light d-flex align-items-center">
-<small>Design</small><span class="mx-1 material-icons md-3">circle</span><small>Live</small>
-</div>
-<p class="fw-bold mb-0 pe-3">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-<small class="text-muted">Trending with</small><br />
-<span class="text-primary">#topdesign</span>
-</div>
-<img src="../static/img/trend1.jpg" class="img-fluid rounded-4 ms-auto" alt="trending-img">
-</a>
-
-<a href="/tags" class="p-3 border-bottom d-flex align-items-center text-dark text-decoration-none">
-<div>
-<div class="text-muted fw-light d-flex align-items-center">
-<small>Celebrity</small><span class="mx-1 material-icons md-3">circle</span><small>Live</small>
-</div>
-<p class="fw-bold mb-0 pe-3">Happy birthday, Osahan Smith 🎂</p>
-<small class="text-muted">Trending with</small><br />
-<span class="text-primary">#HappyBirthdayJohnSmith</span>
-</div>
-<img src="../static/img/rmate5.jpg" class="img-fluid rounded-4 ms-auto" alt="profile-img">
-</a>
-
-<a href="/tags" class="p-3 border-bottom d-flex align-items-center text-dark text-decoration-none">
-<div>
-<div class="text-muted fw-light d-flex align-items-center">
-</div>
-<p class="fw-bold mb-0 pe-3">#SelectricsM12</p>
-<small class="text-muted">Buy now with exclusive offers</small><br />
-<small class="text-muted d-flex align-items-center"><span class="material-icons me-1 small">open_in_new</span>Promoted by Selectrics World</small>
-</div>
-</a>
-
-<div class="p-3 border-bottom d-flex">
-<div>
-<div class="text-muted fw-light d-flex align-items-center">
-<small>Trending in India</small>
-</div>
-<p class="fw-bold mb-0 pe-3 text-dark">#ME11Lite</p>
-<small class="text-muted">Buy now with exclusive offers</small><br />
-<small class="text-muted">52.8k Tweets</small>
-</div>
-<div class="dropdown ms-auto">
-<a href="#" class="text-muted text-decoration-none material-icons ms-2 md-20 rounded-circle bg-light p-1" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">more_vert</a>
-<ul class="dropdown-menu fs-13 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-<li><a class="dropdown-item text-muted" href="#"><span class="material-icons md-13 me-1">sentiment_very_dissatisfied</span>Not interested in this</a></li>
-<li><a class="dropdown-item text-muted" href="#"><span class="material-icons md-13 me-1">sentiment_very_dissatisfied</span>This trend is harmful or spammy</a></li>
-</ul>
-</div>
-</div>
-
-<a href="/tags" class="p-3 border-bottom d-flex align-items-center text-dark text-decoration-none">
-<div>
-<div class="text-muted fw-light d-flex align-items-center">
-<small>Design</small><span class="mx-1 material-icons md-3">circle</span><small>Live</small>
-</div>
-<p class="fw-bold mb-0 pe-3">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-<small class="text-muted">Trending with</small><br />
-<span class="text-primary">#topdesign</span>
-</div>
-<img src="../static/img/rmate2.jpg" class="img-fluid rounded-4 ms-auto" alt="profile-img">
-</a>
 </div>
 </div>
 </main>

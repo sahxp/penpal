@@ -4,6 +4,7 @@ import json
 from datetime import datetime
 
 def index(request):
+
     return render(request,'index.html')
 
 def notfound(request):
@@ -26,8 +27,3 @@ def tags(request):
 
 def contact(request):
     return render(request,'contact.html')
-
-
-
-
-    

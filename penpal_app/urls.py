@@ -8,6 +8,6 @@ urlpatterns = [
   path('editprofile/',views.editprofile,name='editprofile'),
   path('explore/',views.explore,name='explore'),
   path('faq/',views.faq,name='faq'),
-  path('profile/',views.profile,name='Profile'),
+  path('profile/',views.profile,name='profile'),
   path('tags',views.tags,name='tags'),
 ]
