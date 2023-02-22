@@ -572,3 +572,42 @@ h6 {
     padding: 0 !important
   }
 }
+
+
+.card {
+  border: none;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  height: 65vh;
+  overflow-y: auto;
+}
+
+.list-unstyled {
+  padding: 0;
+  margin: 0;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.bg-primary {
+  background-color: #007bff !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+.card-footer {
+  background: none;
+}
+.form-control {
+  border-radius: 50px 50px 50px 50px !important;
+}
