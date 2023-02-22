@@ -13,8 +13,8 @@ def notfound(request):
 def editprofile(request):
     return render(request,'edit-profile.html')
 
-def explore(request):
-    return render(request,'explore.html')
+def chat(request):
+    return render(request,'chat.html')
 
 def faq(request):
     return render(request,'faq.html')

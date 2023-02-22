@@ -592,6 +592,7 @@ h6 {
 .list-unstyled {
   padding: 0;
   margin: 0;
+  
 }
 
 .bg-light {
@@ -610,4 +611,35 @@ h6 {
 }
 .form-control {
   border-radius: 50px 50px 50px 50px !important;
+}
+.padding-top {
+  padding: 40px 0;
+}
+.padding-lr {
+  padding: 0 10px;
+}
+.border-m {
+  border-radius: 14px;
+}
+
+@media (max-width: 500px) {
+
+  .padding-top {
+  padding: 0;
+}
+.padding-lr {
+  padding: 0;
+  border: none;
+  
+}
+.border-m {
+  border-radius: 0;
+}
+.card-footer {
+  background: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 }
