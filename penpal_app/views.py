@@ -27,3 +27,6 @@ def tags(request):
 
 def contact(request):
     return render(request,'contact.html')
+
+def chatbox(request):
+    return render(request,'chatbox.html')

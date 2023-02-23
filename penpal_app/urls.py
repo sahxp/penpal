@@ -10,4 +10,5 @@ urlpatterns = [
   path('faq/',views.faq,name='faq'),
   path('profile/',views.profile,name='profile'),
   path('tags',views.tags,name='tags'),
+  path('chatbox',views.chatbox,name='chatbox'),
 ]

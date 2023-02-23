@@ -32,144 +32,118 @@
     <div class="container">
       <div class="row position-relative">
 
-        <main class=" padding-lr col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
+        <main class=" col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
           <div class="main-content ">
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade" id="pills-feed" role="tabpanel" aria-labelledby="pills-feed-tab">
 
-            <div class="bg-white rounded-4 overflow-hidden shadow-sm mb-4 mb-lg-0 border-m">
-              <!--  -->
+                <div class="input-group mb-4 shadow-sm rounded-4 overflow-hidden py-2 bg-white" data-bs-toggle="modal"
+                  data-bs-target="#postModal">
+                  <span class="input-group-text material-icons border-0 bg-white text-primary">account_circle</span>
+                  <input type="text" class="form-control border-0 fw-light ps-1" placeholder="Update Bio">
+                  <a href="#"
+                    class="text-decoration-none input-group-text bg-white border-0 material-icons text-primary">add_circle</a>
+                </div>
 
-
-
-              <div class="d-flex p-3 border-bottom align-items-center">
-
-                <a href="../" class="material-icons text-dark text-decoration-none me-3">arrow_back</a>
-                <img width="50" src="/static/img/rmate2.jpg" class="img-fluid rounded-circle user-img"
-                  alt="profile-img">
-                <div class="d-flex ms-3 align-items-center w-100">
-                  <div class="w-100">
-
-                    <div class="d-flex align-items-center justify-content-between">
-
-                      <a href="/profile" class="text-decoration-none d-flex align-items-center">
-                        <h6 class="fw-bold mb-0 text-body">Shay Jordon</h6>
-                        <span
-                          class="ms-2 material-icons bg-primary p-0 md-16 fw-bold text-white rounded-circle ov-icon">done</span>
-                        <small class="text-muted ms-2">@shay-jordon</small>
-                      </a>
-
-                    </div>
-
+                
+              </div>
+              <div class="tab-pane fade active show" id="pills-people" role="tabpanel"
+                aria-labelledby="pills-people-tab">
+                <div class="bg-white p-3 feed-item rounded-4 mb-3 mt-3 shadow-sm">
+                  <div class="d-flex align-items-center">
+                    <a href="../" class="material-icons text-dark text-decoration-none me-3">arrow_back</a>
+                    <h6 class="mb-0 d-flex align-items-start text-body fs-6 fw-bold">Your Penpals</h6>
                   </div>
                 </div>
-              </div>
-              <div>
-                <div class="container p-0">
-                  <div class="card-body">
-                    <ul class="list-unstyled">
-                      <li class="mb-3">
-                        <div class="d-flex justify-content-start">
-                          <div class="p-2 bg-light rounded">
-                            Hello, Let me introduce myself first. My name is John and I'm 28 years old. I live in New
-                            York City and work as a software engineer. I love my job because it's challenging and allows
-                            me to be creative. In my free time, I enjoy reading books, listening to music and playing
-                            basketball. What about you? What do you do for a living? What are your hobbies?
 
-                            I'm interested in learning more about your country and culture. Could you tell me more about
-                            the local customs and traditions? What are some of your favorite local dishes? I'm sure the
-                            food in your country is delicious!
+                <div class="bg-white rounded-4 overflow-hidden mb-4 shadow-sm">
 
-                            I'm looking forward to hearing back from you soon. Take care and stay safe.
-                          </div>
-                        </div>
-                      </li>
-                      <li class="mb-3">
-                        <div class="d-flex justify-content-end">
-                          <div class="p-2 bg-primary text-white rounded">
-                            It was great to receive your letter! I'm glad to have a new friend from the United States.
-                            My name is Maria and I'm 25 years old. I live in Madrid, Spain and work as a nurse. It's a
-                            very rewarding job, as I get to help people every day. In my free time, I enjoy hiking,
-                            painting and learning new languages.
-
-                            Spain is known for its delicious food, especially paella and tortilla de patatas. We also
-                            have many traditions, such as La Tomatina, a festival where people throw tomatoes at each
-                            other. Have you heard of it?
-
-                            I'm also interested in learning more about your country. What are some of the famous
-                            landmarks in the United States? What are some of your favorite foods? I'd love to know more
-                            about your culture and way of life.
-
-                            Thank you for writing to me, Penpal A. I'm looking forward to hearing back from you soon.
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-footer">
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Type your message here...">
-                      <div class="input-group-append">
-                        <button class="btn btn-primary ms-3 rounded-circle " style="height: 50px;"><span
-                            class="material-icons mt-1">send</span></button>
+                  <a href="../chatbox"
+                    class="p-3 border-bottom d-flex text-dark text-decoration-none account-item pf-item">
+                    <img src="static/img/image.jpg" class="img-fluid rounded-circle me-3" alt="profile-img">
+                    <div>
+                      <p class="fw-bold mb-0 pe-3 d-flex align-items-center">Vaibhav <span
+                          class="ms-2 material-icons bg-primary p-0 md-16 fw-bold text-white rounded-circle ov-icon">done</span>
+                      </p>
+                      <div class="text-muted fw-light">
+                        <p class="mb-1 small">@abcdsec</p>
+                        <span class="d-flex align-items-center small">Data Scientist</span>
                       </div>
                     </div>
-                  </div>
+                    <div class="ms-auto">
+                      <span class="btn btn-outline-primary btn-sm px-3 rounded-pill">Chat</span>
+                    </div>
+                  </a>
+
+                  <a href="../chatbox"
+                    class="p-3 border-bottom d-flex text-dark text-decoration-none account-item pf-item">
+                    <img src="static/img/image.jpg" class="img-fluid rounded-circle me-3" alt="profile-img">
+                    <div>
+                      <p class="fw-bold mb-0 pe-3 d-flex align-items-center">Aryan<span
+                          class="ms-2 material-icons bg-primary p-0 md-16 fw-bold text-white rounded-circle ov-icon">done</span>
+                      </p>
+                      <div>
+                        <p class="fw-light text-muted mb-1 small">@ac4829</p>
+                        <span class="d-flex align-items-center small">Designer</span>
+                      </div>
+                    </div>
+                    <div class="ms-auto">
+                      <span class="btn btn-outline-primary btn-sm px-3 rounded-pill">Chat</span>
+                    </div>
+                  </a>
+
+                  <a href="../chatbox" class="p-3 d-flex text-dark text-decoration-none account-item pf-item">
+                    <img src="static/img/image.jpg" class="img-fluid rounded-circle me-3" alt="profile-img">
+                    <div>
+                      <p class="fw-bold mb-0 pe-3 d-flex align-items-center">Konex <span
+                          class="ms-2 material-icons bg-primary p-0 md-16 fw-bold text-white rounded-circle ov-icon">done</span>
+                      </p>
+                      <div>
+                        <p class="text-muted fw-light mb-1 small">@Konex</p>
+                        <span class="d-flex align-items-center small">Artist/Author/Motivational Speaker</span>
+                      </div>
+                    </div>
+                    <div class="ms-auto">
+                      <span class="btn btn-outline-primary btn-sm px-3 rounded-pill">Chat</span>
+                    </div>
+                  </a>
+
+                  <a href="../chatbox"
+                    class="p-3 border-bottom d-flex text-dark text-decoration-none account-item pf-item">
+                    <img src="static/img/image.jpg" class="img-fluid rounded-circle me-3" alt="profile-img">
+                    <div>
+                      <p class="fw-bold mb-0 pe-3 d-flex align-items-center">Gurpreet <span
+                          class="ms-2 material-icons bg-primary p-0 md-16 fw-bold text-white rounded-circle ov-icon">done</span>
+                      </p>
+                      <div>
+                        <p class="fw-light text-muted mb-1 small">@icyhymn</p>
+                        <span class="d-flex align-items-center small">Artist</span>
+                      </div>
+                    </div>
+                    <div class="ms-auto">
+                      <span class="btn btn-outline-primary btn-sm px-3 rounded-pill">Chat</span>
+                    </div>
+                  </a>
+
+                  <a href="../chatbox"
+                    class="p-3 border-bottom d-flex text-dark text-decoration-none account-item pf-item">
+                    <img src="static/img/image.jpg" class="img-fluid rounded-circle me-3" alt="profile-img">
+                    <div>
+                      <p class="fw-bold mb-0 pe-3 d-flex align-items-center">Snehalata <span
+                          class="ms-2 material-icons bg-primary p-0 md-16 fw-bold text-white rounded-circle ov-icon">done</span>
+                      </p>
+                      <div>
+                        <p class="fw-light text-muted mb-1 small">@snehalata654</p>
+                        <span class="d-flex align-items-center small">Designer</span>
+                      </div>
+                    </div>
+                    <div class="ms-auto">
+                      <span class="btn btn-outline-primary btn-sm px-3 rounded-pill">Chat</span>
+                    </div>
+                  </a>
                 </div>
 
               </div>
-
-
-              <!-- <canvas id="myChart"></canvas> -->
-
-
-              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-              <script>
-                const ctx = document.getElementById('myChart');
-                const data = {
-                  labels: [
-                    'Eating',
-                    'Drinking',
-                    'Sleeping',
-                    'Designing',
-                    'Coding',
-                    'Cycling',
-                    'Running'
-                  ],
-                  datasets: [{
-                    label: 'My First Dataset',
-                    data: [65, 59, 90, 81, 56, 55, 40],
-                    fill: true,
-                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                    borderColor: 'rgb(255, 99, 132)',
-                    pointBackgroundColor: 'rgb(255, 99, 132)',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: 'rgb(255, 99, 132)'
-                  }, {
-                    label: 'My Second Dataset',
-                    data: [28, 48, 40, 19, 96, 27, 100],
-                    fill: true,
-                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                    borderColor: 'rgb(54, 162, 235)',
-                    pointBackgroundColor: 'rgb(54, 162, 235)',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: 'rgb(54, 162, 235)'
-                  }]
-                };
-                new Chart(ctx, {
-                  type: 'radar',
-                  data: data,
-                  options: {
-                    elements: {
-                      line: {
-                        borderWidth: 3
-                      }
-                    }
-                  },
-                });
-              </script>
-
             </div>
           </div>
         </main>
@@ -292,7 +266,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
                 <script>
-                  
+
                   const kwrd = document.getElementById('myKwrd');
                   const dataa = {
                     labels: [
@@ -316,7 +290,7 @@
                     data: dataa,
                   }
                   );
-                  
+
                 </script>
               </div>
             </div>
