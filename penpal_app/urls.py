@@ -11,4 +11,5 @@ urlpatterns = [
   path('profile/',views.profile,name='profile'),
   path('tags',views.tags,name='tags'),
   path('chatbox',views.chatbox,name='chatbox'),
+  path('graph',views.graph,name='graph'),
 ]

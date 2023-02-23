@@ -373,10 +373,13 @@ h6 {
 .slick-next:before {
   color: #f8c146 !important
 }
-
 .user-list-item .img-fluid {
   height: 60px;
-  width: 60px
+  width: 60px;
+}
+.img-fluid {
+  width: 60px;
+  height: 60px;
 }
 
 .btn-check:active+.btn-outline-primary .follow,
@@ -488,6 +491,7 @@ h6 {
 
   img.img-fluid.logo-mobile {
     height: 36px;
+    width: 36px;
     border-radius: 50%;
     border: 5px solid #0e6dfd;
   }
@@ -508,7 +512,8 @@ h6 {
   }
 
   .main-content {
-    width: 75%
+    width: 70vh;
+    margin: 0;
   }
 
   .side-trend {
@@ -523,6 +528,7 @@ h6 {
 
   img.img-fluid.logo-mobile {
     height: 36px;
+    width: 36px;
     border-radius: 50%;
     border: 5px solid #0e6dfd;
   }
@@ -559,6 +565,7 @@ h6 {
 
   img.img-fluid.logo-mobile {
     height: 36px;
+    width: 36px;
     border-radius: 50%;
     border: 5px solid #0e6dfd;
   }

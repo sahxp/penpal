@@ -1,3 +1,8 @@
+{% url 'index' as index %}
+{% url 'profile' as profile %}
+{% url 'chat' as chat %}
+{% url 'chatbox' as chatbox %}
+
 {% block operation %}
 {% load static %}
 <!DOCTYPE html>
@@ -32,7 +37,7 @@
   <div class="py-4">
     <div class="container">
       <div class="row position-relative">
-
+{% block main %}
         <main class="homepage col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
           <div class="main-content">
             <ul
@@ -71,17 +76,17 @@
                       <h6 class="fw-bold text-body p-3 mb-0 border-bottom">Your Bio</h6>
                       <div class="d-flex p-3 border-bottom">
 
-                        <img src="static/img/rmate2.jpg" class="img-fluid rounded-circle user-img" alt="profile-img">
-                        <div class="d-flex ms-3 align-items-start w-100">
+                        <img src="static/img/image.jpg" class="img-fluid rounded-circle user-img" alt="profile-img" style="width: 60px; height: 60px;">
+                        <div class="d-flex ms-3 align-i tems-start w-100">
                           <div class="w-100">
                             
                             <div class="d-flex align-items-center justify-content-between">
                               
                               <a href="/profile" class="text-decoration-none d-flex align-items-center">
-                                <h6 class="fw-bold mb-0 text-body">Shay Jordon</h6>
+                                <h6 class="fw-bold mb-0 text-body">Sahil</h6>
                                 <span
                                   class="ms-2 material-icons bg-primary p-0 md-16 fw-bold text-white rounded-circle ov-icon">done</span>
-                                <small class="text-muted ms-2">@shay-jordon</small>
+                                <small class="text-muted ms-2">@sahil369</small>
                               </a>
                               <div class="d-flex align-items-center small">
                                 <div class="dropdown">
@@ -135,7 +140,7 @@
                 <h6 class="mb-3 fw-bold text-body">According to our pigeon, You might like these people</h6>
                 <div class="bg-white rounded-4 overflow-hidden mb-4 shadow-sm">
 
-                  <a href="../chatbox"
+                  <a href="../graph"
                     class="p-3 border-bottom d-flex text-dark text-decoration-none account-item pf-item">
                     <img src="static/img/rmate5.jpg" class="img-fluid rounded-circle me-3" alt="profile-img">
                     <div>
@@ -148,11 +153,12 @@
                       </div>
                     </div>
                     <div class="ms-auto">
-                      <span class="btn btn-outline-primary btn-sm px-3 rounded-pill">Chat</span>
+                      <span class="btn btn-outline-dark btn-sm px-3 rounded-pill">Profile</span>
+                      <span class="btn btn-primary btn-sm px-3 rounded-pill ms-1">Chat</span>
                     </div>
                   </a>
 
-                  <a href="../chatbox"
+                  <a href="../graph"
                     class="p-3 border-bottom d-flex text-dark text-decoration-none account-item pf-item">
                     <img src="static/img/rmate4.jpg" class="img-fluid rounded-circle me-3" alt="profile-img">
                     <div>
@@ -165,11 +171,12 @@
                       </div>
                     </div>
                     <div class="ms-auto">
-                      <span class="btn btn-outline-primary btn-sm px-3 rounded-pill">Chat</span>
+                      <span class="btn btn-outline-dark btn-sm px-3 rounded-pill">Profile</span>
+                      <span class="btn btn-primary btn-sm px-3 rounded-pill ms-1">Chat</span>
                     </div>
                   </a>
 
-                  <a href="../chatbox" class="p-3 d-flex text-dark text-decoration-none account-item pf-item">
+                  <a href="../graph" class="p-3 d-flex text-dark text-decoration-none account-item pf-item">
                     <img src="static/img/rmate3.jpg" class="img-fluid rounded-circle me-3" alt="profile-img">
                     <div>
                       <p class="fw-bold mb-0 pe-3 d-flex align-items-center">Konex <span
@@ -181,11 +188,12 @@
                       </div>
                     </div>
                     <div class="ms-auto">
-                      <span class="btn btn-outline-primary btn-sm px-3 rounded-pill">Chat</span>
+                      <span class="btn btn-outline-dark btn-sm px-3 rounded-pill">Profile</span>
+                      <span class="btn btn-primary btn-sm px-3 rounded-pill ms-1">Chat</span>
                     </div>
                   </a>
 
-                  <a href="../chatbox"
+                  <a href="../graph"
                     class="p-3 border-bottom d-flex text-dark text-decoration-none account-item pf-item">
                     <img src="static/img/rmate4.jpg" class="img-fluid rounded-circle me-3" alt="profile-img">
                     <div>
@@ -198,11 +206,12 @@
                       </div>
                     </div>
                     <div class="ms-auto">
-                      <span class="btn btn-outline-primary btn-sm px-3 rounded-pill">Chat</span>
+                      <span class="btn btn-outline-dark btn-sm px-3 rounded-pill">Profile</span>
+                      <span class="btn btn-primary btn-sm px-3 rounded-pill ms-1">Chat</span>
                     </div>
                   </a>
 
-                  <a href="../chatbox"
+                  <a href="../graph"
                     class="p-3 border-bottom d-flex text-dark text-decoration-none account-item pf-item">
                     <img src="static/img/rmate4.jpg" class="img-fluid rounded-circle me-3" alt="profile-img">
                     <div>
@@ -215,7 +224,8 @@
                       </div>
                     </div>
                     <div class="ms-auto">
-                      <span class="btn btn-outline-primary btn-sm px-3 rounded-pill">Chat</span>
+                      <span class="btn btn-outline-dark btn-sm px-3 rounded-pill">Profile</span>
+                      <span class="btn btn-primary btn-sm px-3 rounded-pill ms-1">Chat</span>
                     </div>
                   </a>
                 </div>
@@ -225,6 +235,10 @@
           </div>
 
         </main>
+
+
+{% endblock main %}
+
         <aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12">
           <div class="p-2 bg-light offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
             <div class="sidebar-nav mb-3">
@@ -235,15 +249,17 @@
               </div>
               <ul class="navbar-nav justify-content-end flex-grow-1">
                 <li class="nav-item">
-                  <a href="" class="nav-link active"><span class="material-icons me-3">house</span>
+                     
+                  <a href="../" class="nav-link {% if request.path == index %} active {% endif %}"><span class="material-icons me-3">house</span>
                     <span>home</span></a>
+
                 </li>
                 <li class="nav-item">
-                  <a href="/profile" class="nav-link"><span class="material-icons me-3">account_circle</span>
+                  <a href="/profile" class="nav-link {% if request.path == profile %} active {% endif %}"><span class="material-icons me-3">account_circle</span>
                     <span>Profile</span></a>
                 </li>
                 <li class="nav-item">
-                  <a href="/chat" class="nav-link"><span class="material-icons me-3">chat</span>
+                  <a href="/chat" class="nav-link {% if request.path == chat or request.path == chatbox %} active {% endif %}"><span class="material-icons me-3">chat</span>
                     <span>Chat</span></a>
                 </li>
                 <li class="nav-item">
@@ -281,15 +297,17 @@
               </div>
               <ul class="navbar-nav justify-content-end flex-grow-1">
                 <li class="nav-item">
-                  <a href="" class="nav-link active"><span class="material-icons me-3">house</span>
+                     
+                  <a href="../" class="nav-link {% if request.path == index %} active {% endif %}"><span class="material-icons me-3">house</span>
                     <span>home</span></a>
+
                 </li>
                 <li class="nav-item">
-                  <a href="{% url 'profile' %}" class="nav-link"><span class="material-icons me-3">account_circle</span>
+                  <a href="/profile" class="nav-link {% if request.path == profile %} active {% endif %}"><span class="material-icons me-3">account_circle</span>
                     <span>Profile</span></a>
                 </li>
                 <li class="nav-item">
-                  <a href="/chat" class="nav-link"><span class="material-icons me-3">chat</span>
+                  <a href="/chat" class="nav-link {% if request.path == chat or request.path == chatbox %} active {% endif %}"><span class="material-icons me-3">chat</span>
                     <span>Chat</span></a>
                 </li>
                 <li class="nav-item">
@@ -345,7 +363,7 @@
                 <script>
                   
                   const kwrd = document.getElementById('myKwrd');
-                  const data = {
+                  const data2 = {
                     labels: [
                       'Management',
                       'Research',
@@ -363,8 +381,8 @@
                     }]
                   };
                   new Chart(kwrd, {
-                    type: 'doughnut',
-                    data: data,
+                    type: 'pie',
+                    data: data2,
                   }
                   );
                   
@@ -395,14 +413,14 @@
             <!-- <label for="floatingTextarea2" class="h6 text-muted mb-0">update bio</label> -->
           </div>
         </div>
-        <div class="modal-footer justify-content-start px-1 py-1 bg-white shadow-sm rounded-5">
+        <div class="modal-footer justify-content-start px-1 py-1">
           <div class="rounded-4 m-0 px-3 py-2 d-flex align-items-center justify-content-between w-75">
             <span class="text-muted">0/500</span>
           </div>
           <div class="ms-auto m-0">
             <a data-bs-dismiss="modal" href="#"
               class="btn btn-primary rounded-5 fw-bold px-3 py-2 fs-6 mb-0 d-flex align-items-center"><span
-                class="material-icons me-2 md-16">send</span>Post</a>
+                class="material-icons me-2 md-16">update</span>Update</a>
           </div>
         </div>
       </div>
@@ -686,105 +704,7 @@
     </div>
   </div>
 
-  <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content rounded-4 overflow-hidden border-0">
-        <div class="modal-header d-none">
-          <h5 class="modal-title" id="exampleModalLabel2">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body p-0">
-          <div class="row m-0">
-            <div class="col-sm-7 px-0 m-sm-none">
-
-              <div class="image-slider">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                      class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                      aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                      aria-label="Slide 3"></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="static/img/post-img1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="static/img/post-img2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="static/img/post-img3.jpg" class="d-block w-100" alt="...">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-5 content-body px-web-0">
-              <div class="d-flex flex-column h-600">
-                <div class="d-flex p-3 border-bottom">
-                  <img src="static/img/rmate4.jpg" class="img-fluid rounded-circle user-img" alt="profile-img">
-                  <div class="d-flex align-items-center justify-content-between w-100">
-                    <a href="/profile" class="text-decoration-none ms-3">
-                      <div class="d-flex align-items-center">
-                        <h6 class="fw-bold text-body mb-0">aaaaa</h6>
-                        <p
-                          class="ms-2 material-icons bg-primary p-0 md-16 fw-bold text-white rounded-circle ov-icon mb-0">
-                          done</p>
-                      </div>
-                      <p class="text-muted mb-0 small">@johnsmith</p>
-                    </a>
-                    <div class="small dropdown">
-                      <a href="#" class="text-muted text-decoration-none material-icons ms-2 md-"
-                        data-bs-dismiss="modal">close</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="border-top p-3 mt-auto">
-                  <div class="d-flex align-items-center justify-content-between mb-2">
-                    <div>
-                      <a href="#" class="text-muted text-decoration-none d-flex align-items-start fw-light"><span
-                          class="material-icons md-20 me-2">thumb_up_off_alt</span><span>30.4k</span></a>
-                    </div>
-                    <div>
-                      <a href="#" class="text-muted text-decoration-none d-flex align-items-start fw-light"><span
-                          class="material-icons md-20 me-2">repeat</span><span>617</span></a>
-                    </div>
-                    <div>
-                      <a href="#" class="text-muted text-decoration-none d-flex align-items-start fw-light"><span
-                          class="material-icons md-18 me-2">share</span><span>Share</span></a>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <span class="material-icons bg-white border-0 text-primary pe-2 md-36">account_circle</span>
-                    <div class="d-flex align-items-center border rounded-4 px-3 py-1 w-100">
-                      <input type="text" class="form-control form-control-sm p-0 rounded-3 fw-light border-0"
-                        placeholder="Write Your comment">
-                      <a href="#" class="bg-white border-0 text-primary ps-2 text-decoration-none">Post</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer d-none">
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <script src="{%  static  '/js/index.js'  %}" defer></script>
 

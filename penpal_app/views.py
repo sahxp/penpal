@@ -30,3 +30,6 @@ def contact(request):
 
 def chatbox(request):
     return render(request,'chatbox.html')
+
+def graph(request):
+    return render(request,'graph.html')

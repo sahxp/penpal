@@ -1,0 +1,169 @@
+{% extends "index.html" %}
+{% load static %}
+{% block main %}
+<main class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
+  <div class="main-content">
+
+    <div class="bg-white rounded-4 shadow-sm profile">
+      <div class="d-flex align-items-center px-3 pt-3">
+        <a href="../" class="material-icons text-dark text-decoration-none me-3">arrow_back</a>
+        <img src="../static/img/image.jpg" class="img-fluid rounded-circle" style="width:50px; height: 50px;"
+          alt="profile-img">
+        <div class="ms-3">
+          <h6 class="mb-0 d-flex align-items-start text-body fs-6 fw-bold">Sahil <span
+              class="ms-2 material-icons bg-primary p-0 md-16 fw-bold text-white rounded-circle ov-icon">done</span>
+          </h6>
+          <p class="text-muted mb-0">@sahil369</p>
+        </div>
+
+
+      </div>
+      <div class="p-3">
+        <p class="mb-2 fs-6">Product Manager with 5+ years of experience in the tech industry. Skilled in market
+          research, product development, and project management. Passionate about delivering innovative solutions to
+          solve complex problems.
+        </p>
+        <p class="d-flex align-items-center mb-3"><span
+            class="material-icons me-2 rotate-320 text-muted md-16">link</span><a href="/profile"
+            class="text-decoration-none">mailingpigeon/sahil369</a>
+          <span class="material-icons me-2 text-muted md-16 ms-4">calendar_today</span><span>Joined on Feb 2021</span>
+
+        </p>
+
+      </div>
+    </div>
+    <ul
+      class="top-osahan-nav-tab nav nav-pills justify-content-center nav-justified mb-4 shadow-sm rounded-4 overflow-hidden bg-white mt-4"
+      id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="p-3 nav-link text-muted active" id="pills-feed-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-feed" type="button" role="tab" aria-controls="pills-feed"
+          aria-selected="true">Similarities </button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="p-3 nav-link text-muted" id="pills-trending-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-trending" type="button" role="tab" aria-controls="pills-trending"
+          aria-selected="false">Interests</button>
+      </li>
+
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-feed" role="tabpanel" aria-labelledby="pills-feed-tab">
+
+        <div class="ms-1">
+
+          <div class="feeds">
+
+
+            <div class="bg-white p-3 feed-item rounded-4 mb-3 shadow-sm">
+              <div class="d-flex">
+                <canvas id="myChart" class="p-3 border-bottom d-flex"></canvas>
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+              <script>
+                const ctx = document.getElementById('myChart');
+                const data1 = {
+                  labels: [
+                    'Eating',
+                    'Drinking',
+                    'Sleeping',
+                    'Designing',
+                    'Coding',
+                    'Cycling',
+                    'Running'
+                  ],
+                  datasets: [{
+                    label: 'You',
+                    data: [65, 59, 90, 81, 56, 55, 40],
+                    fill: true,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    pointBackgroundColor: 'rgb(255, 99, 132)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(255, 99, 132)'
+                  }, {
+                    label: 'Vaibhav',
+                    data: [28, 48, 40, 19, 96, 27, 100],
+                    fill: true,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgb(54, 162, 235)',
+                    pointBackgroundColor: 'rgb(54, 162, 235)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(54, 162, 235)'
+                  }]
+                };
+                new Chart(ctx, {
+                  type: 'radar',
+                  data: data1,
+                  options: {
+                    elements: {
+                      line: {
+                        borderWidth: 3
+                      }
+                    }
+                  },
+                });
+              </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-people" role="tabpanel" aria-labelledby="pills-people-tab">
+
+        <div class="feeds">
+
+          <div class="bg-white p-3 feed-item rounded-4 mb-3 shadow-sm">
+            <div class="d-flex">
+
+            </div>
+          </div>
+
+          <div class="bg-white p-3 feed-item rounded-4 mb-3 shadow-sm">
+            <div class="d-flex">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-trending" role="tabpanel" aria-labelledby="pills-trending-tab">
+
+        <div class="feeds">
+
+          <div class="bg-white p-3 feed-item rounded-4 mb-3 shadow-sm">
+            <div class="d-flex">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-mentions" role="tabpanel" aria-labelledby="pills-mentions-tab">
+
+        <div class="feeds">
+
+          <div class="bg-white p-3 feed-item rounded-4 mb-3 shadow-sm">
+            <div class="d-flex">
+
+
+            </div>
+          </div>
+
+          <div class="bg-white p-3 feed-item rounded-4 mb-3 shadow-sm">
+            <div class="d-flex">
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+{% endblock main %}
