@@ -96,15 +96,13 @@
                                     aria-expanded="false">more_vert</a>
                                   <ul class="dropdown-menu fs-13 dropdown-menu-end"
                                     aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item text-muted" href="#"><span
-                                          class="material-icons md-13 me-1">edit</span>Edit</a></li>
+                                    <li><a class="dropdown-item text-muted" data-bs-toggle="modal" data-bs-target="#postModal" href="#"><span
+                                          class="material-icons md-13 me-1">edit</span>Edit/Update</a></li>
                                     <li><a class="dropdown-item text-muted" href="#"><span
                                           class="material-icons md-13 me-1">delete</span>Delete</a></li>
-                                    <li><a class="dropdown-item text-muted" href="#"><span
-                                          class="material-icons md-13 me-1 ltsp-n5">arrow_back_ios
-                                          arrow_forward_ios</span>Embed Penpal</a></li>
+                                    
                                     <li><a class="dropdown-item text-muted d-flex align-items-center" href="#"><span
-                                          class="material-icons md-13 me-1">share</span>Share via another apps</a></li>
+                                          class="material-icons md-13 me-1">share</span>Share bio via another apps</a></li>
                                   </ul>
                                 </div>
                               </div>
@@ -153,8 +151,7 @@
                       </div>
                     </div>
                     <div class="ms-auto">
-                      <span class="btn btn-outline-dark btn-sm px-3 rounded-pill">Profile</span>
-                      <span class="btn btn-primary btn-sm px-3 rounded-pill ms-1">Chat</span>
+                      <span class="btn btn-primary btn-sm px-3 rounded-pill">Profile</span>
                     </div>
                   </a>
 
@@ -171,8 +168,7 @@
                       </div>
                     </div>
                     <div class="ms-auto">
-                      <span class="btn btn-outline-dark btn-sm px-3 rounded-pill">Profile</span>
-                      <span class="btn btn-primary btn-sm px-3 rounded-pill ms-1">Chat</span>
+                      <span class="btn btn-primary btn-sm px-3 rounded-pill">Profile</span>
                     </div>
                   </a>
 
@@ -188,8 +184,7 @@
                       </div>
                     </div>
                     <div class="ms-auto">
-                      <span class="btn btn-outline-dark btn-sm px-3 rounded-pill">Profile</span>
-                      <span class="btn btn-primary btn-sm px-3 rounded-pill ms-1">Chat</span>
+                      <span class="btn btn-primary btn-sm px-3 rounded-pill">Profile</span>
                     </div>
                   </a>
 
@@ -206,8 +201,7 @@
                       </div>
                     </div>
                     <div class="ms-auto">
-                      <span class="btn btn-outline-dark btn-sm px-3 rounded-pill">Profile</span>
-                      <span class="btn btn-primary btn-sm px-3 rounded-pill ms-1">Chat</span>
+                      <span class="btn btn-primary btn-sm px-3 rounded-pill">Profile</span>
                     </div>
                   </a>
 
@@ -224,8 +218,7 @@
                       </div>
                     </div>
                     <div class="ms-auto">
-                      <span class="btn btn-outline-dark btn-sm px-3 rounded-pill">Profile</span>
-                      <span class="btn btn-primary btn-sm px-3 rounded-pill ms-1">Chat</span>
+                      <span class="btn btn-primary btn-sm px-3 rounded-pill">Profile</span>
                     </div>
                   </a>
                 </div>
@@ -270,18 +263,18 @@
                   <a href="" class="nav-link"><span class="material-icons me-3">logout</span>
                     <span>Logout</span></a>
                 </li>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="material-icons me-3">web</span> Pages
                   </a>
                   <ul class="dropdown-menu px-2 py-1 mb-2" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/contact">Contact</a></li>
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/faq">FAQ</a></li>
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/notfound">404 Error</a></li>
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/editprofile">Edit Profile</a></li>
+                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="../contact">Contact</a></li>
+                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="../faq">FAQ</a></li>
+                    
+                    
                   </ul>
-                </li>
+                </li> -->
               </ul>
             </div>
             <a href="#" class="btn btn-primary w-100 text-decoration-none rounded-4 py-3 fw-bold text-uppercase m-0"
@@ -315,10 +308,19 @@
                       class="material-icons me-3">translate</span> <span>Language</span></a>
                 </li>
                 <li class="nav-item">
+                  <a href="../contact" class="nav-link"><span class="material-icons me-3">help</span>
+                    <span>Contact</span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="../faq" class="nav-link"><span class="material-icons me-3">assistant_photo</span>
+                    <span>faq</span></a>
+                </li>
+<li class="nav-item">
                   <a href="" class="nav-link"><span class="material-icons me-3">logout</span>
                     <span>Logout</span></a>
                 </li>
-                <li class="nav-item dropdown">
+
+                <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="material-icons me-3">web</span> Pages
@@ -326,10 +328,10 @@
                   <ul class="dropdown-menu px-2 py-1 mb-2" aria-labelledby="offcanvasNavbarDropdown">
                     <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/contact">Contact</a></li>
                     <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/faq">FAQ</a></li>
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/notfound">404 Error</a></li>
-                    <li><a class="dropdown-item rounded-3 px-2 py-1 my-1" href="/editprofile">Edit Profile</a></li>
+                    
+                    
                   </ul>
-                </li>
+                </li> -->
               </ul>
             </div>
             <a href="#" class="btn btn-primary w-100 text-decoration-none rounded-4 py-3 fw-bold text-uppercase m-0"
